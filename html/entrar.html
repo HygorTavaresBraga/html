@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--LINK DO CSS-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--JQuery(Biblioteca JS)-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!--TÍTULO DA PÁGINA-->
+        <title>HTML</title>
+
+        <!--ÍCONE DA PÁGINA-->
+        <link rel="shortcut icon" href="ico/icone-html.ico">
+
+        <script> $(function(){
+            $('#header').load("header.html");
+            $('#footer').load("footer.html");
+            });
+        </script>
+        
+    </head>
+
+    <body>
+    <!--Insere o cabeçalho (Header) no corpo (Body)-->
+    <div id="header"></div>
+
+    <div class="container-titulo">
+        <h1 class="elemento-titulo">LOGIN</h1>
+    </div>
+
+    <div class="container-login">
+        <div class="form-area">
+            <form action="#">
+                <h2>Usuário</h2>
+                    <input type="text" style="width:60%" placeholder="Digite seu usuário">
+                <h2>Senha</h2>
+                    <input type="password" style="width:60%;" placeholder="•••••••••••••••">
+                        <br><br><br><br>
+                    <input type="submit" style="width:30%; cursor:pointer;" value="ENTRAR">
+                <h3>
+                    <a href="#">não possuo cadastro</a>
+                </h3>
+            </form>
+        </div>
+    </div>
+
+
+    </body>
+
+    <!--Insere o rodape (Footer)-->
+    <div id="footer"></div>
